@@ -72,7 +72,7 @@ footer {
         transform: scale(1);
       }
 
-      & img{
+      & img {
         width: 1.5rem;
         height: auto;
       }
@@ -93,6 +93,20 @@ footer {
         transform: scale(0);
         transition: transform 200ms;
       }
+    }
+  }
+}
+
+@media (width < 80em) {
+  footer {
+    max-width: 22.5rem;
+    flex-direction: column;
+    align-items: start;
+    padding: 3rem 1.5rem 1.5rem;
+    & nav{
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-block: 3rem;
     }
   }
 }
